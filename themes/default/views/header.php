@@ -1150,11 +1150,12 @@
                                                         </a>
                                                     </li>
                                                     
-                                                    <li id="system_settings_suspend">
+                                                    <!--<li id="system_settings_suspend">
                                                         <a href="<?= site_url('system_settings/suspend') ?>">
                                                             <i class="fa fa-tags"></i><span class="text"> <?= lang('suspend'); ?></span>
                                                         </a>
-                                                    </li><!--
+                                                    </li>-->
+                                                    <!--
                                                     <li id="system_settings_suspend_layout">
                                                         <a href="<?= site_url('system_settings/suspend_layout') ?>">
                                                             <i class="fa fa-tags"></i><span class="text"> <?= lang('suspend_layout'); ?></span>
