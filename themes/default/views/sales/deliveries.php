@@ -56,20 +56,21 @@
                 var gtotal = 0;
                 var qototal = 0;
                 for (var i = 0; i < aaData.length; i++) {
-					qototal += parseFloat(aaData[aiDisplay[i]][6]);
-					gtotal += parseFloat(aaData[aiDisplay[i]][7]);
+					qototal += parseFloat(aaData[aiDisplay[i]][7]);
+					gtotal += parseFloat(aaData[aiDisplay[i]][8]);
                 }
                 var nCells = nRow.getElementsByTagName('th');
-                nCells[6].innerHTML = currencyFormat(parseFloat(qototal));
-                nCells[7].innerHTML = currencyFormat(parseFloat(gtotal));
+                nCells[7].innerHTML = currencyFormat(parseFloat(qototal));
+                nCells[8].innerHTML = currencyFormat(parseFloat(gtotal));
             }
         }).fnSetFilteringDelay().dtFilter([
             {column_number: 1, filter_default_label: "[<?=lang('date');?> (yyyy-mm-dd)]", filter_type: "text", data: []},
             {column_number: 2, filter_default_label: "[<?=lang('do_no');?>]", filter_type: "text", data: []},
             {column_number: 3, filter_default_label: "[<?=lang('so_no');?>]", filter_type: "text", data: []},
             {column_number: 4, filter_default_label: "[<?=lang('customer');?>]", filter_type: "text", data: []},
-            {column_number: 5, filter_default_label: "[<?=lang('address');?>]", filter_type: "text", data: []},
-			{column_number: 8, filter_default_label: "[<?=lang('status');?>]", filter_type: "text", data: []},
+            {column_number: 5, filter_default_label: "[<?=lang('Delivery by');?>]", filter_type: "text", data: []},
+            {column_number: 6, filter_default_label: "[<?=lang('address');?>]", filter_type: "text", data: []},
+			{column_number: 9, filter_default_label: "[<?=lang('status');?>]", filter_type: "text", data: []},
         ], "footer");
     });
 	
@@ -126,12 +127,12 @@
 				var gtotal = 0;
 				var qtotal = 0;
                 for (var i = 0; i < aaData.length; i++) {
-					qtotal += parseFloat(aaData[aiDisplay[i]][6]);
-					gtotal += parseFloat(aaData[aiDisplay[i]][7]);
+					qtotal += parseFloat(aaData[aiDisplay[i]][7]);
+					gtotal += parseFloat(aaData[aiDisplay[i]][8]);
                 }
                 var nCells = nRow.getElementsByTagName('th');
-                nCells[6].innerHTML = currencyFormat(parseFloat(qtotal));
-                nCells[7].innerHTML = currencyFormat(parseFloat(gtotal));
+                nCells[7].innerHTML = currencyFormat(parseFloat(qtotal));
+                nCells[8].innerHTML = currencyFormat(parseFloat(gtotal));
             }
 			
         }).fnSetFilteringDelay().dtFilter([
@@ -139,8 +140,9 @@
             {column_number: 2, filter_default_label: "[<?=lang('do_no');?>]", filter_type: "text", data: []},
             {column_number: 3, filter_default_label: "[<?=lang('sale_ref');?>]", filter_type: "text", data: []},
             {column_number: 4, filter_default_label: "[<?=lang('customer');?>]", filter_type: "text", data: []},
-            {column_number: 5, filter_default_label: "[<?=lang('address');?>]", filter_type: "text", data: []},
-			{column_number: 8, filter_default_label: "[<?=lang('issue_invoice');?>]", filter_type: "text", data: []},
+            {column_number: 5, filter_default_label: "[<?=lang('Delivery by');?>]", filter_type: "text", data: []},
+            {column_number: 6, filter_default_label: "[<?=lang('address');?>]", filter_type: "text", data: []},
+			{column_number: 9, filter_default_label: "[<?=lang('issue_invoice');?>]", filter_type: "text", data: []},
         ], "footer");
 		
 		function delivery_status(x) {
@@ -390,6 +392,7 @@
 											<th></th>
 											<th></th>
 											<th></th>
+											<th></th>
 											<th style="width:10px; text-align:center;"><?php echo $this->lang->line("actions"); ?></th>
 										</tr>
 										</tfoot>
@@ -431,6 +434,7 @@
 											<th style="min-width:30px; width: 30px; text-align: center;">
 												<input class="checkbox checkft2" type="checkbox" name="check"/>
 											</th>
+											<th></th>
 											<th></th>
 											<th></th>
 											<th></th>
