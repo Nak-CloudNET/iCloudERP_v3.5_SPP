@@ -1390,7 +1390,7 @@
 																			<i class="fa fa-barcode"></i><span class="text"> <?= lang('products_in_out'); ?></span>
 																		</a>
 																	</li>
-                                                                    <li class="mm_warehouse">
+                                                                    <!--<li class="mm_warehouse">
                                                                         <a class="dropmenu" href="#">
                                                                             <i class="fa fa-building-o"></i>
                                                                             <span class="text"> <?= lang('Warehouse Report'); ?> </span>
@@ -1408,7 +1408,7 @@
                                                                                 </a>
                                                                             </li>
                                                                         </ul>
-                                                                    </li>
+                                                                    </li>-->
 																	<li id="reports_warehouse_products">
 																		<a href="<?= site_url('reports/warehouse_products') ?>">
 																			<i class="fa fa-barcode"></i><span class="text"> <?= lang('warehouse_products'); ?></span>
