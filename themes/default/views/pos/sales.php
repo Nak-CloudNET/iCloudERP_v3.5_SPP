@@ -210,11 +210,11 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#"><i class="icon fa fa-tasks tip"  data-placement="left" title="<?= lang("actions") ?>"></i></a>
                     <ul class="dropdown-menu pull-right" class="tasks-menus" role="menu" aria-labelledby="dLabel">
-						<li>
+						<!--<li>
                             <a data-target="#myModal" data-toggle="modal" href="javascript:void(0)" id="combine_pay" data-action="combine_pay">
                                 <i class="fa fa-money"></i> <?=lang('combine_to_pay')?>
                             </a>
-                        </li>
+                        </li>-->
 						
 						<?php if ($Owner || $Admin || $GP['sales-add']) { ?>
 							<li><a href="<?= site_url('pos') ?>"><i class="fa fa-plus-circle"></i> <?= lang('add_sale') ?></a></li>

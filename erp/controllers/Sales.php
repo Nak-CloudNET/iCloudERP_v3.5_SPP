@@ -11392,10 +11392,10 @@ WHERE
             $this->data['payment_ref'] 		= ''; //$this->site->getReference('sp');
 			if ($this->Owner || $this->Admin || !$this->session->userdata('biller_id')){
 				$biller_id 					= $this->site->get_setting()->default_biller;
-				$this->data['reference'] 	= $this->site->getReference('pp',$biller_id);
+				$this->data['reference'] 	= $this->site->getReference('sp',$biller_id);
 			}else{
 				$biller_id 					= $this->session->userdata('biller_id');
-				$this->data['reference'] 	= $this->site->getReference('pp',$biller_id);
+				$this->data['reference'] 	= $this->site->getReference('sp',$biller_id);
 
             }
 
